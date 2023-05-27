@@ -198,15 +198,15 @@ function xName() {
 
                     if (nombre[i] == null) {
 
-                        return console.log("Haz ingresado : " + (nombre.length - 1)+ " nombres");
+                        return console.log("You have entered : " + (nombre.length - 1)+ " names");
 
                     } else {
 
-                        result = window.confirm("¿Deseas añadir un nombre?");
+                        result = window.confirm("Do you want to add a name?");
 
                         if (result == false) {
 
-                            return console.log("Haz ingresado : " + nombre.length + " nombres");
+                            return console.log("You have entered : " + nombre.length + " names");
 
                         } else {
 
@@ -226,15 +226,15 @@ function xName() {
 
             if (nombre[i] == null) {
 
-                return console.log("Haz ingresado : " + (nombre.length - 1)+ " nombres");
+                return console.log("You have entered : " + (nombre.length - 1)+ " names");
 
             } else {
 
-                result = window.confirm("¿Deseas añadir un nombre?");
+                result = window.confirm("Do you want to add a name?");
 
                 if (result == false) {
 
-                    return console.log("Haz ingresado : " + nombre.length + " nombres");
+                    return console.log("You have entered : " + nombre.length + " names");
 
                 } else {
 
