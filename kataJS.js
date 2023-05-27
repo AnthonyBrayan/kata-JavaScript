@@ -136,19 +136,119 @@ function tenNumberReturnTheLargest() {
         if (parseFloat(numberWritten) > result)
             result = numberWritten;
     }
-    console.log("The largest number  is: "+ result);
+    console.log("The largest number  is: " + result);
 }
 
 // 1101
-
 function nameCharacters() {
 
-    var myName=prompt("Write you name: ");
+    var myName = prompt("Write you name: ");
 
-    console.log("¡Hola "+ myName + "!");
-    console.log("My name has: "+ myName.length + " characters");
-    
+    console.log("¡Hola " + myName + "!");
+    console.log("My name has: " + myName.length + " characters");
+
 }
 
+// 1110
+function arrayTenName() {
+
+    let numberNombre = prompt("Type the number of name to enter: ");
+    let result = [];
+
+    for (let i = 0; i < numberNombre; i++) {
+        result[i] = prompt("Write the name " + (i + 1) + " : ").toLowerCase();
+    }
+    console.log(result.sort());
+
+}
+
+//11111
+
+function arrayTenNumber() {
+    let number = prompt("Type the number of numbers to enter: ");
+    let result = [];
+
+    for (let i = 0; i < number; i++) {
+        numberNegative = prompt("Write the number " + (i + 1) + " : ")
+        if (parseInt(numberNegative) < 0) {
+            result[i] = numberNegative;
+        }
+    }
+    console.log(result);
+}
+
+//100000
+
+function xName() {
+
+    let cont = 0;
+    let nombre = [];
+    let result;
 
 
+    for (let i = 0; i <= cont; i++) {
+
+        if (cont > 0) {
+
+            if (result == true) {
+
+                for (let i = 1; i <= cont; i++) {
+
+                    nombre[i] = prompt("Write a name");
+
+                    if (nombre[i] == null) {
+
+                        return console.log("Haz ingresado : " + (nombre.length - 1)+ " nombres");
+
+                    } else {
+
+                        result = window.confirm("¿Deseas añadir un nombre?");
+
+                        if (result == false) {
+
+                            return console.log("Haz ingresado : " + nombre.length + " nombres");
+
+                        } else {
+
+                            cont++;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        } else {
+
+            nombre[i] = prompt("Write a name");
+
+            if (nombre[i] == null) {
+
+                return console.log("Haz ingresado : " + (nombre.length - 1)+ " nombres");
+
+            } else {
+
+                result = window.confirm("¿Deseas añadir un nombre?");
+
+                if (result == false) {
+
+                    return console.log("Haz ingresado : " + nombre.length + " nombres");
+
+                } else {
+
+                    cont++;
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+}
+
+//10001
